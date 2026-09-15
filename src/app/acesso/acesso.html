@@ -1,0 +1,59 @@
+<main class="login-page">
+
+  <section class="login-card">
+
+    <h1>Entrar</h1>
+
+    <form (ngSubmit)="entrar()">
+
+      <div class="campo">
+        <label for="email">E-mail</label>
+
+        <input
+          id="email"
+          type="email"
+          name="email"
+          [(ngModel)]="email"
+          placeholder="Digite seu e-mail"
+          required
+        />
+      </div>
+
+      <div class="campo">
+        <label for="senha">Senha</label>
+
+        <input
+          id="senha"
+          type="password"
+          name="senha"
+          [(ngModel)]="senha"
+          placeholder="Digite sua senha"
+          required
+        />
+      </div>
+
+      <button
+        class="btn-entrar"
+        type="submit">
+        ENTRAR
+      </button>
+
+    </form>
+
+    <button
+      class="link-btn"
+      type="button"
+      (click)="esqueciSenha()">
+      Esqueci a senha
+    </button>
+
+    <button
+      class="link-btn criar"
+      type="button"
+      (click)="criarConta()">
+      Criar conta
+    </button>
+
+  </section>
+
+</main>
