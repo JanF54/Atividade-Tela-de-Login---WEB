@@ -1,59 +1,53 @@
-# TelaLogin
+# Tela de Login - Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.8.
+Projeto desenvolvido para criar uma tela de login como componente Angular.
 
-## Development server
+## Funcionalidades
 
-To start a local development server, run:
+- Campo de e-mail;
+- Campo de senha;
+- Botão Entrar;
+- Transferência dos dados do formulário para o TypeScript;
+- Impressão do e-mail e senha no Console do navegador;
+- Opção "Esqueci a senha";
+- Opção "Criar conta";
+- Componente `Acesso` separado do componente principal.
+
+## Como executar
 
 ```bash
+npm install
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Depois, acesse:
 
-## Code scaffolding
+http://localhost:4200
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Como verificar o console
 
-```bash
-ng generate component component-name
+1. Preencha e-mail e senha.
+2. Clique em **ENTRAR**.
+3. Abra o DevTools do navegador com `F12`.
+4. Acesse a aba **Console**.
+
+Será exibido algo semelhante a:
+
+```text
+Dados enviados pelo usuário:
+E-mail: exemplo@email.com
+Senha: 123456
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Criar o projeto do zero
+
+Caso precise montar a atividade em um projeto novo:
 
 ```bash
-ng generate --help
+ng new tela-login
+cd tela-login
+ng generate component acesso
+ng serve
 ```
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Substitua os arquivos do componente pelos arquivos deste projeto.
